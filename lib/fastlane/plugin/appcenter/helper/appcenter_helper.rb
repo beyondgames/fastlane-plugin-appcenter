@@ -20,7 +20,7 @@ module Fastlane
           end
           builder.response :json, content_type: /\bjson$/
           builder.use FaradayMiddleware::FollowRedirects
-          builder.adapter :net_http
+          builder.adapter :httpclient
         end
       end
 
